@@ -5,33 +5,58 @@ Här nedan presenteras en översikt över statusen på lösande av uppgfterna.
 
 | Uppgift                      | Status |
 |:-----------------------------|:------:|
-| 1. Diskutera i grupp         |   🔴   |
-| 2. Öva på regex              |   🔴   |
+| 1. Diskutera i grupp         |   🟢   |
+| 2. Öva på regex              |   🟡   |
 | 3. Öva på user stories       |   🔴   |
 | 4. Öva på E2E test           |   🔴   |
 
 
 ## 1️⃣ Diskutera i grupp
 
-#### 1a Vilka strängar matchas av det reguljära uttrycket: "ab" ?
+1a Vilka strängar matchas av det reguljära uttrycket: "ab"?  
+Svar: C. sabotör
 
-#### 1b  Betrakta uttrycket "nisse". Vad skriver jag för att matcha både "Nisse", "NISSE" och "nisse"?
+1b  Betrakta uttrycket "nisse". Vad skriver jag för att matcha både "Nisse", "NISSE" och "nisse"?  
+Svar: /nisse/gmi
 
-#### 1c Vilka strängar matchas av "a*n" ?
+1c Vilka strängar matchas av "a*n"?  
+Svar: Endast "an" om inte /g läggs till för att hitta alla träffar.
 
-#### 1d Vilka strängar matchas av "[ae]n" ?
+1d Vilka strängar matchas av "[ae]n" ?  
+Svar: "inconsequential"
 
-#### 1e Vilka strängar matchas av "je.+e"?
+1e Vilka strängar matchas av "je.+e"?  
+Svar: "jeppe" och "je je"
 
-#### 1f Vilka strängar matchas av "\san?\s"
 
-#### 1g Skriv ner med egna ord, vad följande uttryck matchar. "Strängar som innehåller…"
+1f Vilka strängar matchas av "\san?\s"  
+Svar: "    an   na   an   " och "be a darling"
 
-#### 2a Betrakta https://lejonmanen.github.io/agile-helper/ . Skriv en user story som beskriver att användaren ska kunna läsa hur man gör en "sprint retrospective".
+1g Skriv ner med egna ord, vad följande uttryck matchar. "Strängar som innehåller…"  
+A. line och lines  
+B. Strängar som börjar med ett eller flera "a" och slutar med "ö"  
+C. En eller flera vokaler  
+D. Måste börja med 1 - 9 därefter valfritt antal siffror i spannet 0 - 9  
+E. Fyra siffror - Två siffror - Två siffror (typ: 1970-12-10)  
 
-#### 2b Skriv ner ett testscenario för user storyn. Använd en punktlista. Fundera särskilt på vad som ska testas implicit och explicit.
 
-#### 3 Titta på kodexemplet från lektionen. Skriv upp allt du är osäker på och diskutera i grupp, eller fråga om på nästa lektion.
+2a Betrakta https://lejonmanen.github.io/agile-helper/ . Skriv en user story som beskriver att användaren ska kunna läsa hur man gör en "sprint retrospective".
+
+som användare av agile-helper  
+vill jag kunna läsa om hur man gör en "sprint retroactive"  
+så att jag kan avsluta en sprint på rätt sätt
+
+2b Skriv ner ett testscenario för user storyn. Använd en punktlista. Fundera särskilt på vad som ska testas implicit och explicit.
+
+1. Öppna hemsidan
+2. Klicka på knappen med texten "sista"
+3. Klicka på knappen som innehåller texten "Sprint retroactive"
+4. Kontrollera att rubriken "Sprint retroactive" är synlig
+
+
+3 Titta på kodexemplet från lektionen. Skriv upp allt du är osäker på och diskutera i grupp, eller fråga om på nästa lektion.  
+
+Inga frågor
 
 
 ## 2️⃣ Diskutera i grupp
