@@ -7,8 +7,8 @@ Här nedan presenteras en översikt över statusen på lösande av uppgfterna.
 |:-----------------------------|:------:|
 | 1. Diskutera i grupp         |   🟢   |
 | 2. Öva på regex              |   🟢   |
-| 3. Öva på user stories       |   🟡   |
-| 4. Öva på E2E test           |   🔴   |
+| 3. Öva på user stories       |   🟢   |
+| 4. Öva på E2E test           |   🟡   |
 
 
 ## 1️⃣ Diskutera i grupp
