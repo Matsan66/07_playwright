@@ -6,8 +6,8 @@ Här nedan presenteras en översikt över statusen på lösande av uppgfterna.
 | Uppgift                      | Status |
 |:-----------------------------|:------:|
 | 1. Diskutera i grupp         |   🟢   |
-| 2. Öva på regex              |   🟡   |
-| 3. Öva på user stories       |   🔴   |
+| 2. Öva på regex              |   🟢   |
+| 3. Öva på user stories       |   🟡   |
 | 4. Öva på E2E test           |   🔴   |
 
 
@@ -97,5 +97,77 @@ så att jag kan avsluta en sprint på rätt sätt
 ```
 
 ## 3️⃣ Öva på user stories
+
+```
+[User story 1: Välj en annan dag]
+Story: Som en användare vill jag kunna välja en annan dag efter att jag gjort ett val, 
+så att jag kan navigera rätt om jag valt fel.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/.
+Klicka på knappen med texten "Första".
+Klicka på knappen med texten "Välj en annan dag"
+Kontrollera att knappen med texten "Första" visas på sidan.
+```
+
+```
+[User story 2: Öppna sprint planning]
+Story: Som en användare, vill jag se mötet "sprint planning" som utspelar sig första dagen på en sprint, 
+så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/.
+Klicka på knappen med texten "Första".
+Klicka på knappen vars text innehåller "Sprint planning".
+Kontrollera att ett element med rollen heading och namnet "Sprint planning" visas på sidan.
+```
+
+```
+[User story 3: Öppna daily standup]
+Story: Som en användare, vill jag se mötet "daily standup" som utspelar sig varje dag under en sprint, 
+så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/.
+Klicka på knappen med texten "Första".
+Klicka på knappen vars text innehåller "Daily standup".
+Kontrollera att ett element med rollen heading och namnet "Daily standup" visas på sidan.
+```
+
+```
+[User story 4: Öppna någonstans mitt i]
+Story: Som en användare, vill jag få bekräftat att jag valt alternativet för händelser mitt i sprinten, 
+så att jag vet vad jag ska göra under sprinten.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/.
+Klicka på knappen med texten "Någonstans mitt i".
+Kontrollera att texten "Mitt i sprinten." visas på sidan.
+Kontrollera att knappen vars text innehåller "Daily standup" visas på sidan.
+```
+
+```
+[User story 5: Öppna sprint review]
+Story: Som en användare, vill jag se mötet "Sprint review" som utspelar sig sista dagen på en sprint, 
+så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/.
+Klicka på knappen med texten "Sista".
+Klicka på knappen vars text innehåller "Sprint review".
+Kontrollera att ett element med rollen heading och namnet "Sprint review" visas på sidan.
+```
+
+```
+[User story 6: Öppna sprint retrospective]
+Story: Som en användare, vill jag se mötet "Sprint retrospective" som utspelar sig sista dagen på en sprint, 
+så att jag vet vad jag ska göra på mötet.
+
+Scenario:
+Navigera till webbsidan https://lejonmanen.github.io/agile-helper/ .
+Klicka på knappen med texten "Sista".
+Klicka på knappen vars text innehåller "Sprint retrospective".
+Kontrollera att ett element med rollen heading och namnet "Sprint retrospective" visas på sidan.
+```
 
 ## 4️⃣ Öva på E2E test
