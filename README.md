@@ -8,7 +8,7 @@ Här nedan presenteras en översikt över statusen på lösande av uppgfterna.
 | 1. Diskutera i grupp         |   🟢   |
 | 2. Öva på regex              |   🟢   |
 | 3. Öva på user stories       |   🟢   |
-| 4. Öva på E2E test           |   🟡   |
+| 4. Öva på E2E test           |   🟢   |
 
 
 ## 1️⃣ Diskutera i grupp
@@ -171,3 +171,53 @@ Kontrollera att ett element med rollen heading och namnet "Sprint retrospective"
 ```
 
 ## 4️⃣ Öva på E2E test
+
+Testfall:
+- test_choose_another_day
+- test_open_sprint_planning
+- test_open_daily_standup
+- test_open_in_the_middle
+- test_open_sprint_review
+- test_open_sprint_retrospective
+
+Fixtures i conftest.py:
+
+````python
+@pytest.fixture
+def agile_helper_page(page: Page):
+    """Öppnar Agile Helper."""
+    page.goto("https://lejonmanen.github.io/agile-helper/")
+    return page
+
+@pytest.fixture
+def first_day_page(agile_helper_page: Page):
+    """Öppnar Agile Helper och väljer första dagen."""
+    agile_helper_page.get_by_role("button", name="Första").click()
+    return agile_helper_page
+
+
+@pytest.fixture
+def last_day_page(agile_helper_page: Page):
+    """Öppnar Agile Helper och väljer sista dagen."""
+    agile_helper_page.get_by_role("button", name="Sista").click()
+    return agile_helper_page
+````
+
+Exempel testfall:
+````python
+def test_open_sprint_retrospective(last_day_page: Page):
+    """Testa att det går att se Sprint retrospective"""
+    # Hitta button med texten "Sprint retrospective"
+    sprint_retrospective_button = last_day_page.get_by_role(
+        "button", name=re.compile("Sprint retrospective"))
+
+    expect(sprint_retrospective_button).to_be_visible()
+
+    # Klicka på knappen "Sprint retrospective"
+    sprint_retrospective_button.click()
+
+    # Finns rubriken "Sprint retrospective"?
+    sprint_retrospective_heading = last_day_page.get_by_role(
+        "heading", name="Sprint retrospective")
+    expect(sprint_retrospective_heading).to_be_visible()
+````
